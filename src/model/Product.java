@@ -6,14 +6,12 @@ public class Product {
     private int id;
     private String name;
     private double price;
-    private int amount;
     private Measure measure;
     private Category category;
 
     public Product(String name, double price, int amount, Measure measure, Category category) {
         this.name = name;
         this.price = price;
-        this.amount = amount;
         this.measure = measure;
         this.category = category;
     }
@@ -32,14 +30,6 @@ public class Product {
 
     public void setPrice(double price) {
         this.price = price;
-    }
-
-    public int getAmount() {
-        return amount;
-    }
-
-    public void setAmount(int amount) {
-        this.amount = amount;
     }
 
     public Measure getMeasure() {
@@ -63,8 +53,6 @@ public class Product {
         return "Категория продукта: " + category.getName() +"\n"+
                 "id продукта: " + id +"\n"+
                 "Название продукта:" + name + "\n" +
-                "Цена: " + price +"\n"+
-                "Объём :" + amount +
-                " " + measure.getName() +"\n";
+                "Цена: " + price +"\n";
     }
 }
