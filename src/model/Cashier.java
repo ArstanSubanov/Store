@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Objects;
+
 public class Cashier {
     private String name;
     private String login;
@@ -48,5 +50,18 @@ public class Cashier {
     @Override
     public String toString() {
         return "Кассир: "+name;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Cashier cashier = (Cashier) o;
+        return id == cashier.id && Objects.equals(name, cashier.name) && Objects.equals(login, cashier.login) && Objects.equals(password, cashier.password);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, login, password, id);
     }
 }

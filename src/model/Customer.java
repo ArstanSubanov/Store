@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Objects;
+
 public class Customer {
     private int id;
     private int bonus;
@@ -37,5 +39,18 @@ public class Customer {
     @Override
     public String toString() {
         return  "У вас " + bonus + " бонусных баллов.";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Customer customer = (Customer) o;
+        return id == customer.id && bonus == customer.bonus && useBonus == customer.useBonus;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, bonus, useBonus);
     }
 }
