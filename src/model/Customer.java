@@ -3,7 +3,7 @@ package model;
 public class Customer {
     private int id;
     private int bonus;
-    private boolean useBonus;
+    private int useBonus;
 
     public Customer(int id, int bonus) {
         this.id = id;
@@ -26,11 +26,11 @@ public class Customer {
         this.bonus = bonus;
     }
 
-    public boolean isUseBonus() {
+    public int isUseBonus() {
         return useBonus;
     }
 
-    public void setUseBonus(boolean useBonus) {
+    public void setUseBonus(int useBonus) {
         this.useBonus = useBonus;
     }
 
