@@ -3,6 +3,7 @@ package model;
 import enums.Measure;
 
 public class Product {
+    private int id;
     private String name;
     private double price;
     private int amount;
@@ -55,5 +56,15 @@ public class Product {
 
     public void setCategory(Category category) {
         this.category = category;
+    }
+
+    @Override
+    public String toString() {
+        return "Категория продукта: " + category.getName() +"\n"+
+                "id продукта: " + id +"\n"+
+                "Название продукта:" + name + "\n" +
+                "Цена: " + price +"\n"+
+                "Объём :" + amount +
+                " " + measure.getName() +"\n";
     }
 }
