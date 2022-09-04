@@ -9,11 +9,12 @@ public class Product {
     private Measure measure;
     private Category category;
 
-    public Product(String name, double price, int amount, Measure measure, Category category) {
+    public Product(String name, double price, Measure measure, Category category, int id) {
         this.name = name;
         this.price = price;
         this.measure = measure;
         this.category = category;
+        this.id = id;
     }
 
     public String getName() {
@@ -46,6 +47,14 @@ public class Product {
 
     public void setCategory(Category category) {
         this.category = category;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     @Override
