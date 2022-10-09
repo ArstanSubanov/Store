@@ -6,12 +6,7 @@ import java.util.List;
 
 public interface Operation {
 
-    Customer getCustomer(int id);
-
     Cashier getCashier(int id);
-
-    void createData();
-
     void showCategory();
 
     void showProductByCategory(int categoryId);
@@ -21,5 +16,8 @@ public interface Operation {
     Order calculateOrder(Order order);
 
     void printCheck(Order order, Cashier cashier);
+    Product getProductByCategoryAndId(Category category, int id);
+
+    Category getCategoryById(int categoryId);
 
 }

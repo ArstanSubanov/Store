@@ -4,12 +4,35 @@ import java.util.Objects;
 
 public class Customer {
     private int id;
+
+    private String login;
+
+    private String password;
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     private int bonus;
     private int useBonus;
 
-    public Customer(int id, int bonus) {
+    public Customer(int id, int bonus, String login, String password) {
         this.id = id;
         this.bonus = bonus;
+        this.login = login;
+        this.password = password;
     }
 
     public int getId() {
@@ -38,7 +61,7 @@ public class Customer {
 
     @Override
     public String toString() {
-        return  "У вас " + bonus + " бонусных баллов.";
+        return  login + "У вас " + bonus + " бонусных баллов.";
     }
 
     @Override
