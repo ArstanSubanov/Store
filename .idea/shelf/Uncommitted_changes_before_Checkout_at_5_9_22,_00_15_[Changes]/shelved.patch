@@ -1,0 +1,102 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"02190b5b-1fa1-4dd6-9dcb-562e5a5b6a5e\" name=\"Changes\" comment=\"Modificate Product and add some classes to Model package\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Enum\" />\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2EHzMJdLhyBo0BjVAfYe0LqyBHt\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveClassesOrPackagesDialog.RECENTS_KEY\">\n      <recent name=\"enums\" />\n    </key>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"02190b5b-1fa1-4dd6-9dcb-562e5a5b6a5e\" name=\"Changes\" comment=\"\" />\n      <created>1662267251387</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1662267251387</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Modificate Product and add some classes to Model package\">\n      <created>1662272145264</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1662272145264</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"2\" />\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Modificate Product and add some classes to Model package\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Modificate Product and add some classes to Model package\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -1,7 +1,17 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="02190b5b-1fa1-4dd6-9dcb-562e5a5b6a5e" name="Changes" comment="Modificate Product and add some classes to Model package" />
++    <list default="true" id="02190b5b-1fa1-4dd6-9dcb-562e5a5b6a5e" name="Changes" comment="Show categories and products">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/model/Cashier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Cashier.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/model/Check.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Check.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Customer.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Order.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Product.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/service/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/Operation.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/service/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/Transaction.java" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -11,6 +21,7 @@
+     <option name="RECENT_TEMPLATES">
+       <list>
+         <option value="Enum" />
++        <option value="Interface" />
+         <option value="Class" />
+       </list>
+     </option>
+@@ -45,6 +56,20 @@
+       <recent name="enums" />
+     </key>
+   </component>
++  <component name="RunManager">
++    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="Main" />
++      <module name="Store" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="Application.Main" />
++      </list>
++    </recent_temporary>
++  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -61,7 +86,21 @@
+       <option name="project" value="LOCAL" />
+       <updated>1662272145264</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="Changes in models">
++      <created>1662300745533</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1662300745533</updated>
++    </task>
++    <task id="LOCAL-00003" summary="Show categories and products">
++      <created>1662305435584</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1662305435584</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -77,6 +116,18 @@
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Modificate Product and add some classes to Model package" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Modificate Product and add some classes to Model package" />
++    <MESSAGE value="Changes in models" />
++    <MESSAGE value="Show categories and products" />
++    <option name="LAST_COMMIT_MESSAGE" value="Show categories and products" />
++  </component>
++  <component name="XDebuggerManager">
++    <breakpoint-manager>
++      <breakpoints>
++        <breakpoint enabled="true" type="java-exception">
++          <properties class="java.lang.NullPointerException" package="java.lang" />
++          <option name="timeStamp" value="1" />
++        </breakpoint>
++      </breakpoints>
++    </breakpoint-manager>
+   </component>
+ </project>
+\ No newline at end of file
